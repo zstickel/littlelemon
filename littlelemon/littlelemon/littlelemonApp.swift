@@ -11,7 +11,7 @@ import SwiftUI
 struct littlelemonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Onboarding()
         }
     }
 }
