@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 let kFirstName = "firstNameKey"
 let kLastName = "lastNameKey"
@@ -17,6 +18,7 @@ struct Onboarding: View {
     @State var lastName = ""
     @State var email = ""
     @State var isLoggedIn = false
+    @State var isDataLoaded = false
     var body: some View {
         NavigationView{
             VStack{
@@ -65,6 +67,7 @@ struct Onboarding: View {
         print("Bad regex")
         return false
     }
+  
 }
 
 struct Onboarding_Previews: PreviewProvider {
