@@ -19,14 +19,35 @@ struct Menu: View {
                     Color(red: 73/255, green: 94/255, blue: 87/255)
                     VStack{
                         Text("Little Lemon")
+                            .font(.custom("Markazi Text", size:64))
                             .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         Text("Chicago")
+                            .font(.custom("Markazi Text", size:40))
                             .foregroundColor(Color.white)
-                        Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
-                            .foregroundColor(Color.white)
-                        TextField("Search menu", text: $searchText)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        HStack{
+                            Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
+                                .font(.custom("Karla", size:18))
+                                    .foregroundColor(Color.white)
+                            Image("Hero image")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(15)
+                        }
+                        Spacer()
+                        HStack{
+                            Text(Image(systemName: "magnifyingglass"))
+                            TextField("Search", text: $searchText)
+                                
+                        }
+                        .background(.white.opacity(0.2))
+                        .foregroundColor(.white)
+                        .padding()
+                        
                         
                     }
+                    .padding([.leading, .trailing])
                     
                 }
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {(dishes: [Dish]) in
@@ -108,12 +129,12 @@ struct Menu: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         Spacer()
-                        Image("Little Lemon logo")
+                        Image("Logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         
                         Spacer()
-                        Image("profile-image-placeholder")
+                        Image("Profile")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .clipShape(Circle())

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5EBEB5299B1A41004019B7 /* Markazi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C5EBEB4299B1A41004019B7 /* Markazi.ttf */; };
+		9CD3D801299B276A008CED51 /* Karla-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CD3D800299B276A008CED51 /* Karla-Italic-VariableFont_wght.ttf */; };
 		9CF06D40298B47EC0078A20E /* littlelemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF06D3F298B47EC0078A20E /* littlelemonApp.swift */; };
 		9CF06D44298B47EC0078A20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF06D43298B47EC0078A20E /* Assets.xcassets */; };
 		9CF06D47298B47EC0078A20E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF06D46298B47EC0078A20E /* Preview Assets.xcassets */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C5EBEB4299B1A41004019B7 /* Markazi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Markazi.ttf; sourceTree = "<group>"; };
+		9C5EBEB6299B1D52004019B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CD3D800299B276A008CED51 /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		9CF06D3C298B47EC0078A20E /* littlelemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlelemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF06D3F298B47EC0078A20E /* littlelemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littlelemonApp.swift; sourceTree = "<group>"; };
 		9CF06D43298B47EC0078A20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		9CF06D3E298B47EC0078A20E /* littlelemon */ = {
 			isa = PBXGroup;
 			children = (
+				9C5EBEB6299B1D52004019B7 /* Info.plist */,
 				9CF06D5529947BAB0078A20E /* FetchedObjects.swift */,
 				9CF06D3F298B47EC0078A20E /* littlelemonApp.swift */,
 				9CF06D4F299079950078A20E /* Home.swift */,
@@ -79,6 +85,8 @@
 				9CF06D45298B47EC0078A20E /* Preview Content */,
 				9CF06D5929947C3A0078A20E /* MenuList.swift */,
 				9CF06D5B29947C450078A20E /* MenuItem.swift */,
+				9C5EBEB4299B1A41004019B7 /* Markazi.ttf */,
+				9CD3D800299B276A008CED51 /* Karla-Italic-VariableFont_wght.ttf */,
 			);
 			path = littlelemon;
 			sourceTree = "<group>";
@@ -150,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF06D47298B47EC0078A20E /* Preview Assets.xcassets in Resources */,
+				9C5EBEB5299B1A41004019B7 /* Markazi.ttf in Resources */,
 				9CF06D44298B47EC0078A20E /* Assets.xcassets in Resources */,
+				9CD3D801299B276A008CED51 /* Karla-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +312,7 @@
 				DEVELOPMENT_TEAM = 8NHPVJ97T8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = littlelemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +342,7 @@
 				DEVELOPMENT_TEAM = 8NHPVJ97T8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = littlelemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
