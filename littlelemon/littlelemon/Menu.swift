@@ -206,7 +206,7 @@ struct Menu: View {
                 if let fullMenu {
                     for item in fullMenu.menu {
                         if !isAlreadyInDatabase(title: item.title, context: viewContext){
-                            print("Adding dish not already there")
+                          
                             var dish = Dish(context: viewContext)
                             dish.about = item.description
                             dish.title = item.title
@@ -234,11 +234,11 @@ struct Menu: View {
     }
     func isAlreadyInDatabase(title: String, context: NSManagedObjectContext)->Bool {
         let request: NSFetchRequest<Dish> = Dish.fetchRequest()
-        print(title)
+     
         request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", title)
         do{
             let numberOfRecords = try context.count(for: request)
-            print("Number of records in database: \(numberOfRecords)")
+          
             if numberOfRecords == 0 {
                 return false
             }else{
